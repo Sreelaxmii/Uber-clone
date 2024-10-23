@@ -1,0 +1,538 @@
+#nav{
+    padding: 0%;
+    margin: 0px;
+}
+    #button{
+        border-radius: 30px;
+    }
+
+    .dropdown-item:hover{
+        color:rgb(97, 96, 96);
+
+    }
+    /* home page */
+
+    
+
+    .Ride{
+        font-size: 23px;
+        font-weight: 700;
+        padding-left: 150px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .home-description{
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 130px;
+     padding-left: 180px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     word-spacing: normal;
+    }
+    .details{
+      margin-left: 185px;
+      margin-top: 40px;
+    }
+ #location{
+    padding-left: 185px;
+    padding-bottom: 13px;
+ }
+     /* drpdown id given */
+      #dropdown {
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+    
+      }
+
+      .dropdown:hover #dropdown {
+        display: block;
+      }
+      .input-group {
+        position: relative;
+     display: flex;
+       
+      }
+      
+      .line {
+        position: absolute;
+        width: 1px; /* Line thickness */
+        background-color: #101112;
+        z-index: 1; /* Position it behind the icons */
+    }
+    /* Adjust the position of the line */
+    .line1 {
+        top: -19px; /* Positioning for the first line */
+        left: 21px; /* Starting point */
+        height: 28px; /* Length of the line */
+    }
+
+
+
+      .input-box {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 4px solid #1e1c1c;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .buttons{
+        padding-top: 20px;
+        padding-left: 180px;
+        margin-right: 15px; /* Add spacing between buttons */
+    
+      }
+
+    
+      /* home-image */
+      .img-fluid{
+        width: 600px;
+        padding-top: 70px;
+        padding-bottom: 50px;
+     
+      }
+  
+  /* Hide dropdown content by default */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  /* Show dropdown content only when the dropdown is open */
+  .show > .dropdown-menu {
+    display: block;
+  }
+
+.ride-side {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+ justify-content: right;
+ 
+}
+
+.ride-side li {
+  display: inline;
+  padding: 10px;
+
+}
+
+/* links inside this */
+.ride-side a {
+  text-decoration: none;
+  color:grey;
+  padding: 10px 0px;
+  font-size: 15px;
+
+}
+
+/* Hover Effect for text */
+.ride-side a:hover {
+color:black;
+ 
+}
+/* last list item given a padding for space */
+#last-li{
+  padding-right: 100px;
+}
+
+/* card-suggestion */
+.sug-heading{
+  padding-left: 250px;
+}
+.suggestion{
+  padding-left: 250px;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+  
+  
+}
+/* card images */
+.sug-img{
+
+  width: 130px;
+  float: right;
+}
+.card-body{
+  background-color: rgb(238, 236, 236);
+  border-radius: 5px;
+}
+.card-title{
+  font-size:16px ;
+}
+.card-text{
+  font-size: 13px;
+}
+
+/* home-2 */
+
+#home-2{
+  margin: 10% 8% 18px 8%;
+
+  } 
+  .sectionHead{
+      text-align: justify;
+  line-height: 1.8rem;
+  }
+
+  #home2-ride{
+      text-align: justify;
+      font-size: 30px;
+      font-weight: 600;
+      font-family:sans-serif
+  }
+  .home2{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 50px;
+      align-items: center;
+      
+  }
+  .img1{
+    padding-left: 100px;
+     width: 100%;
+     margin-right: 30%;
+     
+  }
+  .aboutContent{
+    padding-left: 20px;
+      font-size: 18px;
+      text-align: justify;
+      font-family: sans-serif;
+      color: rgb(3, 2, 2);
+  
+  }
+  .sectionHead p{
+  font-size: 16px;
+  color: #544f4f;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  text-align: justify;
+  padding-top: 20px;
+  }
+  .learn{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-decoration:underline;
+      color: rgb(18, 17, 15);
+      font-weight:200 ;
+      font-size: 18px;
+      transition: color 0.3s ease;
+      text-align: justify;
+  
+  }
+  .learn:hover{
+      text-decoration: underline;
+      color: grey;
+  }
+
+  /* images (imgs) */
+  #imgs{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+.imgs{
+padding: 20px;
+}
+.imgs-image{
+  width: 380px;
+  height: 400px;
+  transition: transform 0.5s ease;
+}
+.imgs-image:hover{
+  transform: scale(1.1);
+}
+.imgs h3{
+  padding-top: 30px;
+}
+.imgs p{
+  padding-top: 5px;
+}
+/* enquiry */
+
+.enquiry{
+margin-top: 20px;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 50px;
+align-items: center;
+background-color: #101112;
+}
+#enq-text{
+  padding-left: 30px;
+  color: white;
+}
+.sectionHead-enq{
+  padding-left: 50px;
+}
+.sectionHead-enq a{
+  color: white;
+  text-decoration: underline;
+}
+.dotted-list{
+  padding-left: 180px;
+}
+.dotted-list li {
+  position: relative;
+  padding-left: 1em;
+}
+
+.dotted-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color:white
+}
+#enq-btn{
+  margin-left: 100px;
+}
+.check{
+  padding-left: 50px;
+}
+.img2{
+  width: 75%;
+}
+
+/* faq */
+#faq{
+  padding: 40px;
+
+}
+.faqs h3{
+  font-weight: 700;
+  font-size: 40px;
+
+}
+
+/* qr */
+.qr{
+  padding-left: 180px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-color: rgba(236, 234, 234, 0.925);
+}
+.qr h1{
+  padding-top: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+.qr-img{
+  width: 150px;
+}
+.qr-text{
+  padding: 10px;
+  display: flex;
+  background-color: white;
+ width: 600px
+
+}
+#qr-p{
+font-size: 28px;
+padding-top: 60px;
+padding-left: 15px;
+font-weight: 500;
+}
+#qr-scan{
+  font-size: 15px;
+  padding-left: 10px; 
+}
+.arrow{
+  font-size: 30px;
+  padding-left: 45px;
+padding-top: 60px;
+transition: transform 0.5s ease;
+
+}
+.arrow:hover{
+  transform: scale(1.1);
+}
+.sign-up{
+  padding-left: 180px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+  background-color: white
+}
+/* footer */
+
+footer{
+  padding-top: 15px;
+  /* space below top of footer */
+  height: 700px;
+  width: 100%;
+  background-color: rgb(13, 17, 16);
+  
+}
+.heading{
+  color: white;
+  padding-top: 20px;
+  padding-left: 200px;
+  font-family: "Dosis", sans-serif;
+  font-size: 24px;
+}
+
+.parent{
+  display:flex ;
+  /* use display to give flex,flex display horizontally as r&c */
+/* flex-direction:column-reverse; */
+flex-direction: row;
+/* give column and row in reverse order */
+justify-content: space-evenly;
+/* space between them */
+padding: 50px;
+}
+
+
+
+.child{
+
+  /* border for the div */
+  /* float is for child */
+  width: 150px;
+  height: 300px;
+
+}
+.child{
+  color: rgb(246, 243, 243);
+}
+.child a {
+  text-decoration: none;
+  color: inherit;
+}
+.child p{
+  font-size: 14px;
+}
+.social-icons{
+  padding-left: 150px;
+  display: flex;
+ 
+}
+.social-icons a {
+  color: white;
+  font-size: 20px; /* Icon size */
+  margin: 0 10px;
+  text-decoration: none;
+  padding-left: 50px;
+}
+#yt{
+  padding-right: 550px;
+}
+.social-icons a:hover {
+  color:gray;
+}
+.custom-button {
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-button i {
+  margin-right: 10px; /* Space between icon and text */
+}
+.copyright {
+  margin-top: 10px;
+  color: #ccc;
+  padding-left: 200px;
+  font-size: 13px;
+}
+.copyright1{
+  display: flex;
+  font-size: 13px;
+}
+.copyright1 {
+  color: white;
+  gap: 10px;
+  padding-top: 30px;
+
+}
+
+#cr-p{
+
+ padding-left: 850px;
+ font-size: 13px;
+}
+/* Media query for small screens (max-width 768px) */
+@media only screen and (max-width: 768px) {
+    /* Adjust the navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    /* Resize the logo in the navbar */
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Stack the buttons vertically in the navbar */
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    /* Adjust button size and margin */
+    #button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    /* Stack the "home" section content */
+    #homeContent .row {
+        flex-direction: column;
+    }
+
+    /* Reduce the font size and text alignment */
+    .home p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Adjust images to fit the screen */
+    .img-fluid, .imgs-image, .qr-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Resize and center the "suggestions" section cards */
+    .suggestion .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust padding for smaller screens */
+    .container-new, .suggestion, .home2, .enquiry, .faqs, footer {
+        padding: 20px;
+    }
+
+    /* Adjust the accordion for smaller screens */
+    .accordion-item h2 {
+        font-size: 18px;
+    }
+
+    /* Stack the "enquiry" section content */
+    .enquiry {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Reduce footer heading sizes */
+    footer h3 {
+        font-size: 20px;
+    }
+
+    /* Reduce QR code section size */
+    .qr {
+        text-align: center;
+    }
+    
+    /* Adjust FAQ section padding */
+    .faqs h3 {
+        font-size: 22px;
+    }
+}

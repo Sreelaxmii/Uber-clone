@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBER CLONE</title>
+   <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-dark " id="nav">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+    <img src="images/logo-img.png" alt="Bootstrap" width="60" height="60"> </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          <button type="button" class="btn btn-dark" id="button">Ride</button>
+          <button type="button" class="btn btn-dark " id="button">Drive</button>
+          <button type="button" class="btn btn-dark" id="button">Business</button>
+                 
+          <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          About
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">About us</a></li>
+          <li><a class="dropdown-item " id="abt-dropdown" href="#">Our offerings</a></li>
+          <li><a class="dropdown-item " id="abt-dropdown" href="#">How uber works</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Impact</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Diversity,equity and inclusion</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Sustainability</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Explore</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Newsroom</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Investor relation</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Autonomous</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Blog</a></li>
+          <li><a class="dropdown-item" id="abt-dropdown" href="#">Careers</a></li>
+          </ul>
+          </div>
+             </div>
+              </div>
+
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-dark " id="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-globe2" viewBox="0 0 17 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+                  </svg> EN </button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-dark " id="button">Help</button>
+                </li>
+                <li class="nav-item ">
+                  <button type="button" class="btn btn-dark " id="button">Log in</button>
+                </li> <br>
+                  <button type="button" class="btn btn-light" id="button">Sign up</button>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- home -->
+    
+          <section id="homeContent">
+            <div class="container-new">
+          <div class="row"> 
+          <!-- ride details -->
+          <div class="col-md-6">
+          <div class="home">
+          <p class="Ride">Ride</p>
+         
+          <p class="home-description">Request a rider for <br> now or later</p>
+          <p class="details">Add in your trip details,hop in,and go</p>
+          <!-- dropdown location -->
+         <div class="dropdown w-75" id="location">
+            <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-record-circle-fill"></i></span>
+            <input type="text" class="form-control dropdown-toggle" id="locationInput" placeholder="Enter location" data-bs-toggle="dropdown" aria-expanded="false" aria-describedby="inputGroupPrepend">
+          </div>
+
+        <!-- Dropdown Menu with Locations -->
+        <ul class="dropdown-menu" aria-labelledby="locationInput" id="dropdown">
+        <li><a class="dropdown-item" href="#">Thrissur</a></li>
+        <li><a class="dropdown-item" href="#">Kochi</a></li>
+        <li><a class="dropdown-item" href="#">Palakkad</a></li>
+       </ul>
+     </div>
+      
+     <div class="dropdown w-75" id="location">
+      <div class="input-group ">
+        <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-geo-fill"></i></span>
+        <div class="line line1"></div>
+        <input type="text" class="form-control dropdown-toggle" id="locationInput" placeholder="Enter destination" data-bs-toggle="dropdown" aria-expanded="false" aria-describedby="inputGroupPrepend">
+      </div>
+
+      <!-- Dropdown Menu with Locations -->
+      <ul class="dropdown-menu" aria-labelledby="locationInput" id="dropdown">
+      <li><a class="dropdown-item" href="#">Thrissur</a></li>
+      <li><a class="dropdown-item" href="#">Kochi</a></li>
+       <li><a class="dropdown-item" href="#">Palakkad</a></li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+    <button type="button" class="btn btn-dark ">See Prices</button>
+    <button type="button" class="btn btn-secondary">Schedule for later</button>
+    </div>
+
+    </div>
+    </div>
+          <div class="col-md-6"> <!-- 6 out of 12 grid columns -->
+
+            <ul class="ride-side">
+                <li><a href="#">Request a ride</a></li>
+                <li><a href="#">Reserve a ride</a></li>
+                <li><a href="#">See prices</a></li>
+                <li id="last-li"><a href="#">Explore ride options</a></li>
+              </ul>
+         <img src="images/home-img.webp" alt="Ride Image" class="img-fluid">
+           </div>
+    
+              </div>
+            </div>
+          </section>
+
+          <!-- card view -->
+           <section id="suggestions">
+            <h2 class="sug-heading">Suggestions</h2>
+            <br>
+            <div class="suggestion">
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <img src="images/car.png" alt="" class="sug-img">
+                <h5 class="card-title">Ride</h5>
+                <p class="card-text">Go anywhere with Uber. <br> Request a ride,hop in & go.</p>
+                <button type="button" class="btn btn-light" id="button">Details</button>
+              </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+              <div class="card-body">
+                <img src="images/date.png" alt="" class="sug-img">
+                <h5 class="card-title">Reserve</h5>
+                <p class="card-text">Reserve your ride in advance <br> so you can relax on the day of your trip.</p>
+                <button type="button" class="btn btn-light" id="button">Details</button>
+              </div>
+            </div>
+          </div>
+          </div>
+           </section>
+
+  <!-- home-2 -->
+ <section id="home-2">
+ <div class="home2">
+ <div class="aboutImage">
+ <img class="img1" src="images/home2 img.webp" alt="noimage">
+  </div>
+  <div class="aboutContent">
+  <div class="sectionHead">
+  <span id="home2-ride">Ride with friends <br> seamlessly</span>
+  <br><br>
+   <p>Riding with friends just got easier: set up a group ride in the <br> Uber app, invite your friends, and arrive at your destination. <br> Friends who ride together save together.
+    <br> <br><a class="learn" href="">Learn more</a>
+      </div>
+        </div>
+           </section>
+
+    <!-- images -->
+      <section id="imgs">
+
+      <div class="imgs">
+      <img class="imgs-image"  src="images/imgs1.webp" alt="no images"><br>
+      <h3>Ride Options</h3>
+      <p>There’s more than one way to move with Uber, no  <br>matter where you are or where you’re <br> headed next.</p>
+      <button type="button" class="btn btn-dark">Search ride options</button>
+      </div>
+      <div class="imgs">
+        <img class="imgs-image" src="images/imgs2.webp" alt="noimage"><br>
+        <h3>700+ airports</h3>
+        <p>You can request a ride to and from most major  <br>airports. Schedule a ride to the airport for one <br> less thing to worry about..</p>
+        <button type="button" class="btn btn-dark">Search Aiports</button>
+        </div>
+        <div class="imgs">
+          <img class="imgs-image" src="images/imgs3.webp" alt="noimage"><br>
+          <h3>10000+ cities</h3>
+          <p>The app is available in thousands of cities <br> worldwide, so you can request a ride even when <br> you’re far from home..</p>
+          <button type="button" class="btn btn-dark">Search cities</button>
+          </div>
+      </section>
+      <div class="enquiry">
+        <div class="aboutContent">
+          <div class="sectionHead-enq">
+         <h1 id="enq-text">Looking for business<br>solutions?</h1> 
+          <br><br>
+         <ul class="dotted-list">
+          <li><a href="">Business travel</a></li>
+          <li><a href="">Courtesy ride</a></li>
+          <li><a href="">Meal program</a></li>
+          <li><a href="">Item delivery</a></li>
+         </ul>
+         <button type="button" class="btn btn-light text-dark" id="enq-btn">Get started</button>
+            <a class="check" href="">
+              Check out our solutions</a>
+              </div>
+                </div>
+                <div class="aboutImage">
+                  <img class="img2" src="images/enq img.webp" alt="noimage">
+                   </div>
+      </div>
+
+      <!-- faq -->
+
+     <section id="faq">
+      <div class="faqs m-5">
+        <h3>Frequently Asked Questions</h3><br>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Can I have a lost item delivered to me?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                The Uber app helps provide a delivery solution that can save you a trip across town, whether it’s for a last-minute birthday gift or your forgotten keys. <br> Just choose Package in the Uber app.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Can I rent a car using Uber?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Yes. Find out more about how car rentals work.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Can I request a ride that picks up friends in different locations?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Yes. Set up a group ride in the Uber app, invite your friends, and arrive at your destination together.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                Can I request a taxi on Uber?
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Uber makes it easy to get a taxi nearby in the cities where Uber Taxi is available. There’s no need to find a cab stand, hail a cab on the street, or even call the local cab company. Instead, you can use the Uber app or website to request a taxi in just a few taps or clicks.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                Is there an Uber ride option for 5 people?
+              </button>
+            </h2>
+            <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Request UberXL for a van or SUV that fits up to 6 people at an affordable price. It’s perfect for a family trip or a ride to the airport.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- qr code -->
+  <div class="qr">
+      <h1>Do more in the app</h1>
+      <div class="qr-text">
+      <img class="qr-img" src="images/uber qr.webp" alt="no image">
+      <p id="qr-p"> Download the Uber app <br> <span id="qr-scan">scan to download</span></p>
+      <p class="arrow"><i class="bi bi-arrow-right"></i></p>
+
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+    <div class="sign-up">
+      <h1>Sign up to ride</h1>
+      <hr>
+      <br><br><br>
+      <p>Certain requirements and features vary by country, region, and city.</p>
+      
+    </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <h3 class="heading">Uber</h3>
+      <h3 class="heading">Visit help center</h3>
+
+      <div class="parent">
+       
+          <div class="child" >
+             <h5>Company</h5>
+              <p><a href="">About us</a></p>
+              <p><a href="">Our offerings</a></p>
+              <p><a href="">Newsroom</a></p>
+              <p><a href="">Investors</a></p>
+              <p><a href="">Blog</a></p>
+              <p><a href="">Careers</a></p>
+          </div>
+
+          <div class="child">
+              <h5>Products</h5>
+               <p><a href=""> Ride</a></p>
+               <p><a href=""> Drive</a></p>
+               <p><a href=""> Deliver</a></p>
+               <p><a href=""> Eat</a></p>
+               <p><a href=""> Uber for Business</a></p>
+               <p><a href=""> Uber Freight</a></p>
+               <p><a href=""> Gift cards</a></p>
+           </div>
+      
+              <div class="child">
+                  <h5>Global citizenship</h5>
+                   <p><a href=""> Safety</a></p>
+                   <p><a href="">Diversity and Inclusion</a></p>
+                   <p><a href="">Sustainability</a></p>
+                  
+               </div>
+                  <div class="child">
+                   <h5>Travel</h5>
+                       <p><a href="">Reserve</a></p>
+                       <p><a href="">Cities</a></p>                
+               </div>
+      </div>
+      <div class="social-icons">
+        <a  href="https://www.facebook.com" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a id="yt"  href="https://www.youtube.com" target="_blank">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <button class="btn btn-outline-primary custom-button" >
+          <i class="bi bi-translate"></i>
+          English
+        </button>
+      
+        <!-- Button for Location Selection -->
+        <button class="btn btn-outline-secondary custom-button" >
+          <i class="bi bi-geo-alt"></i>
+          Location
+        </button>
+       
+      </div>
+      <div class="copyright1">
+      <p class="copyright mt-3">
+        ©2024 Uber Technologies Inc.
+      </p>
+      <p id="cr-p">Privacy</p>
+      <p >Accessibility</p>
+      <p >Terms</p>
+    </div>
+      </div>
+      
+      
+           
+          
+
+ 
+</footer>
+</body>
+<!-- bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</html>
